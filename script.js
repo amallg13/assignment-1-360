@@ -78,9 +78,7 @@ function updateClues() {
     });
 }
 
-// =====================================
 // IMAGE 1: CAFE OPENING
-// =====================================
 
 function startStory() {
     showMoment(
@@ -97,9 +95,7 @@ function startStory() {
     );
 }
 
-// =====================================
 // IMAGE 2: MAYA'S MISSING DRINK
-// =====================================
 
 function showMissingDrink() {
     showMoment(
@@ -117,9 +113,7 @@ function showMissingDrink() {
     );
 }
 
-// =====================================
 // IMAGE 3: RECEIPT CLUE
-// =====================================
 
 function showReceipt() {
     addClue("Maya's Receipt");
@@ -138,9 +132,7 @@ function showReceipt() {
     );
 }
 
-// =====================================
 // IMAGES 4 AND 5: PICKUP COUNTER
-// =====================================
 
 function showEmptyCounter() {
     showMoment(
@@ -245,9 +237,7 @@ function inspectDrink(person) {
     );
 }
 
-// =====================================
 // IMAGE 6: BARISTA STATION
-// =====================================
 
 function showBaristaStation() {
     showMoment(
@@ -280,9 +270,7 @@ function showBaristaStation() {
     );
 }
 
-// =====================================
 // IMAGE 7: ORDER SCREEN CLUE
-// =====================================
 
 function showOrderScreen() {
     orderScreenFound = true;
@@ -304,9 +292,7 @@ function showOrderScreen() {
     );
 }
 
-// =====================================
 // IMAGE 8: BARISTA NOTE CLUE
-// =====================================
 
 function showBaristaNote() {
     baristaNoteFound = true;
@@ -327,9 +313,7 @@ function showBaristaNote() {
     );
 }
 
-// =====================================
 // IMAGES 9, 10 AND 11: CUSTOMERS
-// =====================================
 
 function showCustomers() {
     showMoment(
@@ -434,9 +418,8 @@ function inspectNoahCup() {
     );
 }
 
-// =====================================
 // IMAGE 13: EVIDENCE BOARD
-// =====================================
+
 
 function showEvidenceBoard() {
     showMoment(
@@ -470,9 +453,7 @@ function showEvidenceBoard() {
     );
 }
 
-// =====================================
 // IMAGE 14: CHOOSE A SUSPECT
-// =====================================
 
 function showAnswerSelection() {
     showMoment(
@@ -503,9 +484,7 @@ function showAnswerSelection() {
     );
 }
 
-// =====================================
 // IMAGES 15 AND 16: ENDINGS
-// =====================================
 
 function showEnding(correct) {
     if (correct) {
@@ -543,9 +522,7 @@ function showEnding(correct) {
     }
 }
 
-// =====================================
 // RESTART THE MYSTERY
-// =====================================
 
 function restartStory() {
     clues = [];
