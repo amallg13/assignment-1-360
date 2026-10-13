@@ -199,24 +199,31 @@ function showDrinks() {
 }
 
 function inspectDrink(person) {
-    let image;
+
     let description;
 
     if (person === "Sofia") {
-        image = 10;
+
         description =
-            "Sofia ordered a small cappuccino with whole milk. " +
-            "It does not match Maya's order.";
-    } else if (person === "Liam") {
-        image = 11;
+            "Cup A belongs to Sofia. She ordered a small hot cappuccino " +
+            "with whole milk. This does not match Maya's large iced latte.";
+
+    }
+
+    else if (person === "Liam") {
+
         description =
-            "Liam ordered a medium iced matcha with almond milk. " +
-            "It does not match Maya's order.";
-    } else {
-        image = 9;
+            "Cup B belongs to Liam. He ordered a medium iced matcha " +
+            "with almond milk. This does not match Maya's latte.";
+
+    }
+
+    else if (person === "Noah") {
+
         description =
-            "Noah ordered a large iced caramel latte with oat milk. " +
-            "His drink is very similar to Maya's!";
+            "Cup C belongs to Noah. He ordered a large iced caramel latte " +
+            "with oat milk. His drink is very similar to Maya's!";
+
         addClue("Noah's Drink");
     }
 
@@ -225,7 +232,7 @@ function inspectDrink(person) {
     }
 
     showMoment(
-        image,
+        5,
         person + "'s Drink",
         description,
         [
@@ -558,3 +565,4 @@ document.getElementById("restartButton").addEventListener(
 
 // Open the first scene when the website loads
 startStory();
+
